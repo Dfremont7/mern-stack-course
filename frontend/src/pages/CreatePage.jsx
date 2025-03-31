@@ -39,9 +39,9 @@ const CreatePage = () => {
  }
 
   return (
-    <Container maxW={'container.sm'}>
+    <Container maxW={'container.sm'} py={12}>
       <VStack spacing={'8px'}>
-        <Heading as={'h1'} size={'2xl'} mb={'8px'}>Create new product</Heading>
+        <Heading as={'h1'} fontSize={30} mb={10}>Create new product</Heading>
         <Box as={'form'} w={'full'} bg={useColorModeValue('white', 'gray.800')} p={'6'} rounded={'lg'} shadow={'md'}>
           <VStack spacing={'4'}>
             <Input type={'text'} placeholder={'Name'} value={newProduct.name} onChange={(e) => setNewProduct({...newProduct, name: e.target.value})} />
