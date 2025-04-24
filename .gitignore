@@ -21,3 +21,6 @@ node_modules/
 # Fichiers de IDE
 .vscode/
 .idea/
+
+# Fichier MacOS
+.DS_Store
