@@ -91,6 +91,10 @@ const ProductCard = ({ product }) => {
         h={48}
         w="full"
         objectFit="cover"
+        onError={(e) => {
+          e.target.onerror = null;
+          e.target.src = "/placeholder.svg";
+        }}
       />
 
       <Box p={4}>
